@@ -22,6 +22,9 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end() " This loads the plugins and sets up commands like :PlugInstall
 
+" Set autowrite on buffer close
+set autowrite
+
 " Set the leader key to space
 nnoremap <SPACE> <Nop>
 let mapleader=" "
@@ -38,6 +41,9 @@ set guicursor=n:block
 
 " Enable smart indentation
 set smartindent
+
+" allow spaces in filenames
+set isfname+=32
 
 " Disable line wrapping
 set nowrap
@@ -115,7 +121,11 @@ filetype plugin indent on
 
 " --- Key Mappings ---
 " Save file 
-nmap <leader>w :w!<cr> 
+nmap <leader>w :w!<CR>
+
+" Move to the notes folder
+" Map <leader>on (open notes) to first CD to the folder, then open Netrw in it.
+ nnoremap <leader>on :cd Y:\My\ Drive\Notes\ArtyVault <bar> Ex .<CR>
 
 " Map leader pv to the Ex command (file explorer)
 nnoremap <leader>pv :Ex<CR>

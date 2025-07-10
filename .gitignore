@@ -1,0 +1,55 @@
+# vim-plug managed plugins
+# This is the directory where vim-plug installs plugins.
+# Based on your vimrc: call plug#begin('~/vimfiles/plugin')
+# So, exclude the 'plugin' directory itself.
+/plugin/
+
+# Vim's auto-generated files
+# Swap files (used for crash recovery)
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+
+# Ignore the downloaded plugins
+/plugin/*
+
+# Backup files (created when 'backup' option is on)
+*~
+*.bak
+*.orig
+*.tmp
+
+# Persistent undo files (when 'undofile' is on)
+# Based on your vimrc: set undodir=$USERPROFILE/vimfiles/undodir
+# So, exclude the 'undodir' directory itself.
+/undodir/
+
+# View files (when 'viewdir' is set or mkview is used)
+# Default is ~/.vim/view or ~/vimfiles/view
+/view/
+
+# Session files (when :mksession is used)
+*.shm
+*.viminfo
+Session.vim
+
+# Temporary files created by some plugins or operations
+*.log
+*.out
+*.obj
+*.o
+*.pyc
+__pycache__/
+
+# Specific to fzf (if it creates any temporary files in the root)
+.fzf.bash
+.fzf.zsh
+.fzf.fish
+
+# macOS specific (if you ever copy this repo to macOS)
+.DS_Store
+
+# Windows specific
+Thumbs.db
