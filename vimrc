@@ -15,10 +15,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 " fzf executable (needed for fzf.vim)
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " fzf.vim plugin (Vim integration)
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf.vim'
+
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end() " This loads the plugins and sets up commands like :PlugInstall
 
@@ -133,6 +135,9 @@ nnoremap <leader>pv :Ex<CR>
 " Source my vimrc
 nnoremap <leader><leader> :so $MYVIMRC<CR>
 
+" Toggle wrap
+nnoremap <leader>r :set wrap!<CR>
+
 " Move selected lines up/down in Visual mode
 " :m '>+1 moves the selected lines down one position
 " :m '<-2 moves the selected lines up one position
@@ -234,21 +239,9 @@ nnoremap Q @q
 
 " --- Plugin fmappings ---
 
-" fzf.vim mappings
-" Layout settings
-let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.6, 'y': 0.1, 'x': 0.1, 'border': 'sharp' } }
-
+" ctrlp.vim mappings
 " search [p]roject [f]iles
-nnoremap <leader>pf :Files<CR>
-
-" search [b]uffers
-nnoremap <leader>b :Buffers<CR>     
-
-" [g]rep search
-nnoremap <leader>g :Rg<SPACE> 
-
-" search current [l]ines
-nnoremap <leader>l :Lines<CR>
-
-" search [h]istory
-nnoremap <leader>h :History<CR>
+nnoremap <leader>pf :CtrlP<CR>
+nnoremap <C-p> :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+" You can explore more options in :h ctrlp-commands
