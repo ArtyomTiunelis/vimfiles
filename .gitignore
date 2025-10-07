@@ -3,6 +3,7 @@
 # Based on your vimrc: call plug#begin('~/vimfiles/plugin')
 # So, exclude the 'plugin' directory itself.
 /plugin/
+/plugged/
 
 # Vim's auto-generated files
 # Swap files (used for crash recovery)

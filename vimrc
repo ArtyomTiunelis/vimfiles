@@ -1,5 +1,5 @@
 " Specify the directory for installed plugins
-call plug#begin('~/vimfiles/plugin') 
+call plug#begin('~/vimfiles/plugged') 
 
 " --- Plugins Go Here ---
 
@@ -242,6 +242,5 @@ nnoremap Q @q
 " ctrlp.vim mappings
 " search [p]roject [f]iles
 nnoremap <leader>pf :CtrlP<CR>
-nnoremap <C-p> :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 " You can explore more options in :h ctrlp-commands

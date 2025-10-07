@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='C:/Users/ATIUNELIS/vimfiles'
+let g:netrw_dirhist_5='C:\Users\ATIUNELIS'
+let g:netrw_dirhist_4='Y:/My Drive/Notes/ArtyVault/Projects/OCICertification/ApplicationIntegration'
+let g:netrw_dirhist_3='Y:/My Drive/Notes/ArtyVault/Projects/OCICertification'
+let g:netrw_dirhist_2='Y:/My Drive/Notes/ArtyVault/Projects'
+let g:netrw_dirhist_1='Y:\My Drive\Notes\ArtyVault'
+let g:netrw_dirhist_0='Y:\My Drive\Notes\ArtyVault\Projects\Middle-East-Hub-MEH'
+let g:netrw_dirhist_9='Y:/My Drive/Notes/ArtyVault/Projects/Middle-East-Hub-MEH'
+let g:netrw_dirhist_8='Y:/My Drive/Notes/ArtyVault/Projects'
+let g:netrw_dirhist_7='Y:\My Drive\Notes\ArtyVault'
